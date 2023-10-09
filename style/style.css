@@ -45,10 +45,72 @@ li{
     margin-right: .5rem;
 }
 
+.mr-15{
+    margin-right: 1.5rem;
+}
+
 .current-page{
     /* text-decoration: underline; */
 
     border-bottom: 2px solid var(--text-main);
+}
+
+.icon-m{
+    scale: 1.8;
+}
+
+.icon-s{
+    scale: 1.4;
+}
+
+.icon-xs{
+    scale: 1.2;
+}
+
+
+/* ========================================== */
+
+
+/* Buttons */
+.platfom__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.btn{
+    background-color:black ;
+    border: none;
+    color: white;
+    padding: 0.7rem 1.8rem;
+    border-radius: 10rem;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.btn > div p {
+margin: 0;
+    font-size: 1rem;
+}
+
+.btn > div h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.btn:hover{
+    background-color: rgb(39, 39, 39);
 }
 /* ====================================== */
 
@@ -73,6 +135,7 @@ li{
     padding-top: 3rem;
     position: sticky;
     top: 0;
+    /* height: 8rem; */
 }
 
 .hero__section nav a img {
@@ -90,6 +153,7 @@ li{
     align-items: center;
     gap: 2rem;
     cursor: pointer ;
+    height: 4rem;
 }
  
 .hero__section nav .nav__middle ul li,
@@ -101,6 +165,26 @@ li{
 .hero__section nav .nav__middle ul li:hover,
 .hero__section nav .nav__right ul li:hover{
     color: var(--hover);
+}
+
+.hero__text{
+    width: 60%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero__text h1{
+    font-size: 7rem;
+}
+
+.hero__text p{
+    font-family: 'Open Sans', sans-ser;
+    margin-top: 1rem;   
+    margin-bottom: 3rem;
 }
 /* ============================================ */
 
