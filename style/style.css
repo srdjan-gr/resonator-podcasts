@@ -49,6 +49,10 @@ li{
     margin-right: 1.5rem;
 }
 
+.mt-9{
+    margin-top: 9rem;
+}
+
 .current-page{
     /* text-decoration: underline; */
 
@@ -112,6 +116,26 @@ margin: 0;
 .btn:hover{
     background-color: rgb(39, 39, 39);
 }
+
+
+.play-button{
+    width: 6rem;
+    height: 6rem;
+    border: 2px solid var(--circle-gray);
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.episode__page{
+    color: var(--text-main);
+}
+
+.episode__page:hover{
+    color: var(--hover);
+    cursor: pointer;
+}
 /* ====================================== */
 
 
@@ -132,10 +156,9 @@ margin: 0;
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 3rem;
+    padding-top: 2rem;
     position: sticky;
     top: 0;
-    /* height: 8rem; */
 }
 
 .hero__section nav a img {
@@ -168,7 +191,7 @@ margin: 0;
 }
 
 .hero__text{
-    width: 60%;
+    width: 65%;
     height: 70%;
     margin: 0 auto;
     display: flex;
@@ -191,7 +214,7 @@ margin: 0;
 
 /* Last podcast section */
 .last__podcast-container{
-    width: 60%;
+    width: 65%;
     box-shadow: var(--shadow);
     border-radius: 6px;
     position: absolute;
@@ -271,15 +294,7 @@ audio {
     width: 80%;
 }
 
-.last__podcast-player .play-button{
-    width: 6rem;
-    height: 6rem;
-    border: 2px solid var(--circle-gray);
-    border-radius: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .last__podcast-player .play-button .play{
     width: 3rem;
@@ -287,6 +302,77 @@ audio {
     color: var(--circle-gray);
     margin-left: .3rem;
     cursor: pointer;
+}
+
+
+/* Best practice section */
+.bestpractice__section {
+    margin-top: 20rem;
+    width: 65%;
+    margin: 20rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bestpractice__section-image{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    width: 45rem;
+}
+
+.bestpractice__section-image h4{
+    transform: rotate(-90deg);
+    font-size: 6rem;
+    width: 40rem;
+    margin: 0;
+    position: absolute;
+    bottom: 40%;
+    left: -18rem;
+    color: rgb(245, 245, 245);
+}
+
+.bestpractice__section-image img{
+    max-width: 40rem;
+    z-index: 5;
+    border-radius: 6px;
+}
+
+.bestpractice__section .bestpractice__section-text{
+    max-width: 40%;
+}
+
+.bestpractice__section-text .episode-desc{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color:var(--text-light);
+}
+
+.bestpractice__section h2{
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+}
+
+.bestpractice__section-episode-container{
+    display: flex;
+    gap: 1rem
+}
+
+.bestpractice__section-episode-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bestpractice__section-episode-text h3{
+  font-size: 1.2rem;
+}
+
+.bestpractice__section-episode-text p{
+    margin-top: .4rem;
 }
 
 
