@@ -1,0 +1,60 @@
+@keyframes display {
+    0% {
+      transform: translateX(1200px);
+      opacity: 0;
+    }
+    /* 10% {
+      transform: translateX(500px);
+      opacity: .6;
+    } */
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    40% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-490px);
+      opacity: .6;
+    }
+    70% {
+      transform: translateX(-750px);
+      opacity: 0;
+    } 
+    100% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-top: 4rem;
+  }
+  
+  .pic-ctn .singlePodcast {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 22rem);
+    top: calc(50% - 11rem);
+    opacity: 0;
+    animation: display 18s infinite;
+  }
+  
+  .singlePodcast:nth-child(1) {
+    animation-delay: 2s;
+  }
+  .singlePodcast:nth-child(2) {
+    animation-delay: 8s;
+  }
+  .singlePodcast:nth-child(3) {
+    animation-delay: 14s;
+  }

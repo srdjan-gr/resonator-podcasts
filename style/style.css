@@ -10,6 +10,8 @@
     --hover: rgb(91, 91, 91);
 
     --circle-gray: #CECECE;
+
+    --section-gray: #f8f8f8;
 }
 
 * {
@@ -307,7 +309,7 @@ audio {
 
 /* Best practice section */
 .bestpractice__section {
-    margin-top: 20rem;
+    /* margin-top: 10rem; */
     width: 65%;
     margin: 20rem auto 0;
     display: flex;
@@ -373,6 +375,76 @@ audio {
 
 .bestpractice__section-episode-text p{
     margin-top: .4rem;
+}
+
+
+/* Top podcasts */
+.topPodcasts{
+    width: 100vw;
+    height: 55rem;
+    background-color: var(--section-gray);
+    margin-top: 10rem;
+    padding: 5rem 0;
+}
+
+.topPodcasts__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.topPodcasts__header h2{
+  font-size: 2.6rem;
+}
+
+.topPodcasts__header p{
+  font-size: 1.2rem;
+}
+
+/* .splide__slide img{
+    width: 5rem;
+} */
+
+.topPodcasts .singlePodcast{
+    width: 45rem;
+    height: 22rem;
+    background-color: white;
+    box-shadow: var(--shadow);
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    border-radius: 6px;
+    border: 1px solid blask;
+}
+
+.singlePodcast-image{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.singlePodcast-image img{
+    max-height: 100%;
+}
+
+.podcast-headphone{
+    position: absolute;
+    top: 1rem;
+    right: .6rem;
+    background-color: white;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.singlePodcast-descriorion {
+    padding: 2rem;
+}
+
+.singlePodcast-descriorion h4{
+    margin: .5rem 0 2rem 0 ;
+    border-bottom: 2px solid var(--text-main);
+    line-height: 1.5;
 }
 
 
