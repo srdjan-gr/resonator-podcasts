@@ -600,7 +600,62 @@ audio {
 
 /* Footer */
 footer{
-    height: 45rem;
     width: 100vw;
     background-color: black;
+    padding: 10rem 0;
+}
+
+.footer__container{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__logo p{
+    color: var(--text-light);
+    margin-top: .5rem;
+    font-size: 1.2rem;
+}
+
+.footer__logo{
+    /* background-color: rgb(255, 165, 165); */
+    width: 20rem;
+}
+
+.footer__text {
+    /* background-color: rgb(50, 174, 205); */
+    margin-left: 10rem;
+}
+
+.footer__text-desc {
+    display: flex;
+    gap: 8rem;
+    /* background-color: yellowgreen; */
+}
+
+.footer__text h2{
+    width: 60%;
+    text-align: start;
+    margin-bottom: 8rem;
+    color: var(--text-light-footer);
+}
+
+.footer__text-desc-list ul li {
+    margin-bottom: .5rem;
+    color: var(--text-light);
+}
+
+.footer__text-desc-list ul li:first-child {
+    margin-bottom: 3rem;
+}
+
+.footer__text-desc-list ul li:last-child {
+    margin-top: 8rem;
+}
+
+.footer__text-desc-list ul li i {
+    margin-right: 1rem;
+    cursor: pointer;
 }
