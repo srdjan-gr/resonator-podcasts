@@ -542,11 +542,65 @@ audio {
 }
 
 
+/* Hosts section */
+.host__section{
+    width: 65%;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+.host__section-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 3rem;
+}
+ 
+.host__card{
+    width: 35rem;
+    height: 40;
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 17px -11px rgba(0,0,0,0.40);
+    -moz-box-shadow: 0px 2px 17px -11px rgba(0,0,0,0.40);
+    box-shadow: 0px 2px 17px -11px rgba(0,0,0,0.40);
+    border-radius: 10px;
+
+}
+
+.host__card img{
+    width: 100%;
+}
+
+.host__card-desc{
+    padding: 2rem;
+}
+
+.host__card-desc h4{
+    font-size: 2.2rem;
+    margin-bottom: .7rem;
+}
+
+.host__card-desc p{
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.host__card-socials{
+    padding: 0 2rem 2rem;
+    width: 100%;
+}
+
+.host__card-socials i {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+
 
 /* Footer */
 footer{
     height: 45rem;
     width: 100vw;
     background-color: black;
-    margin-top: 80rem;
 }
