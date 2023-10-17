@@ -383,7 +383,6 @@ audio {
 /* Top podcasts */
 .topPodcasts{
     width: 100vw;
-    height: 50rem;
     background-color: var(--section-gray);
     margin-top: 10rem;
     padding: 6rem 0;
