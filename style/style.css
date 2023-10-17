@@ -7,6 +7,8 @@
     --text-white: #fff;
 
     --shadow: 8px 8px 15px -12px rgba(48,48,48,0.58);
+    --shadow-card: 0px 3px 15px -3px rgba(0,0,0,0.75);
+
     --hover: rgb(91, 91, 91);
 
     --circle-gray: #CECECE;
@@ -381,10 +383,10 @@ audio {
 /* Top podcasts */
 .topPodcasts{
     width: 100vw;
-    height: 55rem;
+    height: 50rem;
     background-color: var(--section-gray);
     margin-top: 10rem;
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 .topPodcasts__header {
@@ -395,16 +397,12 @@ audio {
 }
 
 .topPodcasts__header h2{
-  font-size: 2.6rem;
+  font-size: 3rem;
 }
 
 .topPodcasts__header p{
   font-size: 1.2rem;
 }
-
-/* .splide__slide img{
-    width: 5rem;
-} */
 
 .topPodcasts .singlePodcast{
     width: 45rem;
@@ -412,7 +410,6 @@ audio {
     background-color: white;
     box-shadow: var(--shadow);
     display: flex;
-    /* align-items: center; */
     justify-content: flex-start;
     border-radius: 6px;
     border: 1px solid blask;
@@ -431,7 +428,7 @@ audio {
 .podcast-headphone{
     position: absolute;
     top: 1rem;
-    right: .6rem;
+    right: 1rem;
     background-color: white;
     padding: .5rem;
     border-radius: .5rem;
@@ -445,6 +442,79 @@ audio {
     margin: .5rem 0 2rem 0 ;
     border-bottom: 2px solid var(--text-main);
     line-height: 1.5;
+}
+
+
+/* Esential podcasts section */
+.esential__section{
+    width: 65%;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.esential__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+} 
+ 
+.esential__header h3{
+    font-size: 2.6rem;
+}
+
+.esential__header p{
+    font-size: 1.2rem;
+}
+
+.esential__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    /* background-color: rgb(255, 255, 116); */
+    padding: 1rem;
+}
+
+.essential__grid-card{
+    width: 30rem;
+    height: 45rem;
+    border-radius: 6px;
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 17px -11px rgba(0,0,0,0.40);
+    -moz-box-shadow: 0px 2px 17px -11px rgba(0,0,0,0.40);
+    box-shadow: 0px 2px 17px -11px rgba(0,0,0,0.40);
+    overflow: hidden;
+    /* margin: 1rem; */
+}
+
+.essential__grid-card-text{
+   padding: 1rem;
+}
+
+.essential__grid-card-text h4{
+   font-size: 1.6rem;
+   margin-top: .5em;
+   border-bottom: 2px solid var(--text-main);
+   /* width: 70%; */
+}
+
+.essential__grid-card-text p:last-child{
+    cursor: pointer;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.essential__grid-card img{
+    width: 100%;
+}
+
+.share{
+    background-color: #8E8B8C;
+    color: white;
+    padding: .1rem;
+    border-radius: 10rem;
+    margin-left: .5rem;
 }
 
 
