@@ -157,7 +157,7 @@ margin: 0;
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 2rem;
-    position: sticky;
+    position: static;
     top: 0;
 }
 
@@ -223,7 +223,6 @@ margin: 0;
     transform: translate(-50%, 50%);
     background-color: #fff;
     display: flex;
-    /* border: 1px solid red; */
 }
 
 .last__podcast-img{
