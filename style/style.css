@@ -525,7 +525,7 @@ audio {
 
 /* Video section */
 .video__section{
-    height: 50rem;
+    max-height: 50rem;
     overflow-y: hidden;
     position: relative;
     margin-bottom: 10rem;
@@ -820,11 +820,43 @@ footer{
         margin-bottom: 0;
     } 
 
+    .esential__header p{
+        width: 100%;
+    } 
+
     .esential__grid{
         display: grid;
         justify-items: center;
         grid-template-columns: 1fr;
         gap: 5rem;
+    }
+    /* ====================================== */
+
+
+    /* Video section */
+    .video__section{
+        max-height: 50rem;
+    }
+    /* ====================================== */
+
+
+    /* Hosts section */
+    .host__section{
+        width: 93%;
+    }
+
+    .host__section-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        gap: 5rem;
+    }
+
+    .host__card{
+        width: 30rem;
+        height: 35;
     }
     
 }
