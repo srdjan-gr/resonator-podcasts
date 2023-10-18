@@ -20,7 +20,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 html {
@@ -31,6 +30,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1.4rem;
     color: var(--text-main);
+    overflow-x: hidden;
 
 }
 
@@ -704,6 +704,9 @@ footer{
     /* Last podcast section */
     .last__podcast-container{
         width: 93%;
+        left: 50%;
+        transform: translate(-50%, 90%);
+        /* border: 1px solid red; */
     }
 
     .last__podcast-container-player{
@@ -735,4 +738,38 @@ footer{
         width: 100%;
     }
 
+    /* ============================================ */
+
+
+    /* Best practice section */
+    .bestpractice__section {
+        /* margin-top: 10rem; */
+        width: 93%;
+        margin: 12rem auto 0;
+        flex-direction: column;
+    }
+
+    .bestpractice__section .bestpractice__section-text{
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .episode__page{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .bestpractice__section-image{
+        width: 37rem;
+    }
+
+    .bestpractice__section-image h4{
+        font-size: 5rem;
+        bottom: 52%;
+    }
+    
+    .bestpractice__section-image img{
+        max-width: 32rem;
+    }
+    
 }
