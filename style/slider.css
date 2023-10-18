@@ -62,7 +62,7 @@
   @media  (max-width: 700px) {
     
     .pic-ctn .singlePodcast {
-      left: calc(50% - 20rem);
+      left: 0;
       top: calc(50% - 11rem);
     }
   }

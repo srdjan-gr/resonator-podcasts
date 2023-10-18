@@ -313,7 +313,6 @@ audio {
 
 /* Best practice section */
 .bestpractice__section {
-    /* margin-top: 10rem; */
     width: 65%;
     margin: 20rem auto 0;
     display: flex;
@@ -329,6 +328,12 @@ audio {
     width: 45rem;
 }
 
+.bestpractice__section-image img{
+    max-width: 40rem;
+    z-index: 5;
+    border-radius: 6px;
+}
+
 .bestpractice__section-image h4{
     transform: rotate(-90deg);
     font-size: 6rem;
@@ -340,11 +345,6 @@ audio {
     color: rgb(245, 245, 245);
 }
 
-.bestpractice__section-image img{
-    max-width: 40rem;
-    z-index: 5;
-    border-radius: 6px;
-}
 
 .bestpractice__section .bestpractice__section-text{
     max-width: 40%;
@@ -476,7 +476,9 @@ audio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    padding: 1rem;
+    /* padding: 1rem; */
+    justify-items: center;
+    /* background-color: aquamarine; */
 }
 
 .essential__grid-card{
@@ -669,12 +671,12 @@ footer{
 
 @media  (max-width: 700px) {
 
-    /* Hero Sectio */
+    /* Hero Section */
     .hero__section nav {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         padding: 1.5rem;
         position: fixed; 
         top: 0;
@@ -713,8 +715,8 @@ footer{
     .last__podcast-container{
         width: 93%;
         left: 50%;
-        transform: translate(-50%, 90%);
-        /* border: 1px solid red; */
+        bottom: 0;
+        transform: translate(-50%, 110%);
     }
 
     .last__podcast-container-player{
@@ -746,14 +748,13 @@ footer{
         width: 100%;
     }
 
-    /* ============================================ */
+    /* =================================== */
 
 
     /* Best practice section */
     .bestpractice__section {
-        /* margin-top: 10rem; */
         width: 93%;
-        margin: 12rem auto 0;
+        margin: 16rem auto 0;
         flex-direction: column;
     }
 
@@ -767,28 +768,63 @@ footer{
         margin-bottom: 5rem;
     }
 
-    .bestpractice__section-image{
-        width: 37rem;
+    
+    .bestpractice__section-image h4{
+        font-size: 4rem;
+        bottom: 65%;
     }
 
-    .bestpractice__section-image h4{
-        font-size: 5rem;
-        bottom: 52%;
+    .bestpractice__section-image{
+        /* width: 37rem; */
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
     
     .bestpractice__section-image img{
-        max-width: 32rem;
+        /* max-width: 32rem; */
+        max-width: 80%;
     }
-    /* ============================================ */
+    /* ====================================== */
 
+
+    /* Top podcasts section */
+    .topPodcasts{
+        padding: 6rem 1.5rem;
+        margin: 10rem auto;
+    }
 
     .topPodcasts .singlePodcast{
-        width: 38rem;
-        height: 20rem;
+        /* width: 38rem; */
+        max-width: 90%;
+        height: 18rem;
     }
 
     .singlePodcast-desc {
         padding: 1rem;
+    }
+    /* ====================================== */
+
+
+
+    /* Esential podcasts section */
+    .esential__section{
+        width: 93%;
+        padding-top: 0;
+    }
+
+    .esential__header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    } 
+
+    .esential__grid{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        gap: 5rem;
     }
     
 }
