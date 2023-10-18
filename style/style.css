@@ -223,6 +223,7 @@ margin: 0;
     transform: translate(-50%, 50%);
     background-color: #fff;
     display: flex;
+    /* border: 1px solid red; */
 }
 
 .last__podcast-img{
@@ -230,7 +231,9 @@ margin: 0;
 }
 
 .last__podcast-img img{
+    border-radius: 6px 0 0 6px;
     width: 100%;
+    height: 100%;
 }
 
 .last__podcast-container-player{
